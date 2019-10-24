@@ -20,7 +20,7 @@ app.get('/', function(req, res) {
 
 // your first API endpoint...
 app.get('/api/hello', function(req, res) {
-  console.log('req', req);
+  // console.log('req', req);
   res.json({ greeting: 'hello API' });
 });
 
