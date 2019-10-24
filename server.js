@@ -26,7 +26,7 @@ app.get('/api/hello', function(req, res) {
 
 app.get('/api/whoami', function(req, res) {
   // console.log('-----------------');
-  console.log('req', req);
+  // console.log('req', req);
   // console.log('-----------------');
   // console.log('res.req', res.req);
   res.json({
@@ -37,7 +37,7 @@ app.get('/api/whoami', function(req, res) {
 });
 
 // listen for requests :)
-// var listener = app.listen(process.env.PORT, function () {
-var listener = app.listen(5555, function() {
+var listener = app.listen(process.env.PORT, function() {
+  // var listener = app.listen(5555, function() {
   console.log('Your app is listening on port ' + listener.address().port);
 });
